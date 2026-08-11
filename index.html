@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Vukašin Gligorić | Political and Social Psychologist</title>
+  <title>Vukašin Gligorić, PhD | Political and Social Psychologist</title>
 
-  <meta name="description"
-        content="Vukašin Gligorić is a political and social psychologist and Postdoctoral Researcher at NYU Abu Dhabi.">
+  <meta
+    name="description"
+    content="Vukašin Gligorić is a political and social psychologist and Postdoctoral Researcher at New York University Abu Dhabi."
+  >
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -27,7 +32,7 @@
     }
 
     a {
-      color: #7a3d2b;
+      color: #8b422d;
       text-decoration: none;
     }
 
@@ -36,12 +41,15 @@
     }
 
     .container {
-      width: min(1080px, 88%);
+      width: min(1180px, 90%);
       margin: auto;
     }
 
+
+    /* ---------------- HEADER ---------------- */
+
     header {
-      background: #fafafa;
+      background: rgba(250, 250, 250, 0.97);
       border-bottom: 1px solid #e5e5e5;
       position: sticky;
       top: 0;
@@ -49,7 +57,7 @@
     }
 
     nav {
-      min-height: 72px;
+      min-height: 76px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -57,27 +65,30 @@
     }
 
     .name {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #222;
-      letter-spacing: 0.01em;
+      white-space: nowrap;
     }
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      gap: 25px;
       flex-wrap: wrap;
     }
 
     .nav-links a {
-      color: #444;
+      color: #333;
       font-size: 0.95rem;
     }
 
+
+    /* ---------------- HERO ---------------- */
+
     .hero {
-      min-height: 620px;
+      min-height: 650px;
       display: grid;
-      grid-template-columns: 1.35fr 0.85fr;
+      grid-template-columns: 1.4fr 0.8fr;
       gap: 70px;
       align-items: center;
       padding: 90px 0;
@@ -85,42 +96,53 @@
 
     .hero h1 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(3rem, 6vw, 5.3rem);
-      line-height: 1.02;
+      font-size: clamp(2.8rem, 4.8vw, 4.7rem);
+      line-height: 1.05;
       font-weight: 500;
-      margin: 0 0 20px;
+      margin: 0 0 18px;
       letter-spacing: -0.035em;
+      white-space: nowrap;
     }
 
     .subtitle {
       font-size: 1.35rem;
       color: #666;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     .intro {
-      max-width: 660px;
-      font-size: 1.08rem;
-      color: #444;
+      max-width: 730px;
+      font-size: 1.05rem;
+      color: #3e3e3e;
     }
 
     .hero-links {
-      margin-top: 32px;
+      margin-top: 30px;
       display: flex;
-      gap: 20px;
+      gap: 14px;
       flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
       padding: 11px 18px;
-      border: 1px solid #7a3d2b;
+      border: 1px solid #8b422d;
       border-radius: 4px;
+      transition: 0.15s ease;
+    }
+
+    .button:hover {
+      text-decoration: none;
+      background: #f5efec;
     }
 
     .button.primary {
-      background: #7a3d2b;
-      color: white;
+      background: #8b422d;
+      color: #fff;
+    }
+
+    .button.primary:hover {
+      background: #743623;
     }
 
     .profile-photo {
@@ -134,8 +156,46 @@
       margin-left: auto;
     }
 
+
+    /* ---------------- SOCIAL ICONS ---------------- */
+
+    .social-links {
+      display: flex;
+      gap: 13px;
+      margin-top: 24px;
+      align-items: center;
+    }
+
+    .social-link {
+      width: 42px;
+      height: 42px;
+      border: 1px solid #d5d5d5;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #444;
+      background: #fff;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .social-link:hover {
+      transform: translateY(-2px);
+      border-color: #8b422d;
+      color: #8b422d;
+      text-decoration: none;
+    }
+
+    .social-link svg {
+      width: 21px;
+      height: 21px;
+    }
+
+
+    /* ---------------- SECTIONS ---------------- */
+
     section {
-      padding: 95px 0;
+      padding: 90px 0;
       border-top: 1px solid #e5e5e5;
     }
 
@@ -146,15 +206,14 @@
       margin: 0 0 40px;
     }
 
-    h3 {
-      margin-top: 0;
-    }
-
     .two-column {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 70px;
     }
+
+
+    /* ---------------- RESEARCH ---------------- */
 
     .research-list {
       list-style: none;
@@ -165,56 +224,102 @@
     .research-list li {
       padding: 13px 0;
       border-bottom: 1px solid #ddd;
-      font-size: 1.05rem;
+      font-size: 1.03rem;
     }
 
+
+    /* ---------------- PUBLICATIONS ---------------- */
+
     .publication {
-      margin-bottom: 34px;
-      max-width: 850px;
+      margin-bottom: 35px;
+      max-width: 950px;
     }
 
     .publication-title {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.2rem;
+      font-size: 1.18rem;
       font-weight: 600;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
 
     .publication-meta {
-      color: #666;
+      color: #555;
+      margin-bottom: 4px;
     }
 
-    .role {
-      margin-bottom: 34px;
+
+    /* ---------------- EDUCATION / TEACHING ---------------- */
+
+    .entry {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 30px;
+      margin-bottom: 32px;
+      max-width: 920px;
     }
 
-    .role-year {
+    .entry-date {
       color: #888;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
+      font-size: 0.92rem;
     }
 
-    .role-title {
-      font-size: 1.15rem;
+    .entry-title {
+      font-size: 1.08rem;
       font-weight: 600;
     }
 
+    .entry-note {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+
+    /* ---------------- THESIS ---------------- */
+
+    .thesis-box {
+      max-width: 920px;
+      padding: 30px;
+      border: 1px solid #ddd;
+      background: #fff;
+      border-radius: 4px;
+    }
+
+    .thesis-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+
+    /* ---------------- CONTACT ---------------- */
+
+    .contact-links {
+      margin-top: 20px;
+    }
+
+
+    /* ---------------- FOOTER ---------------- */
+
     footer {
-      padding: 55px 0;
+      padding: 50px 0;
       color: #777;
       font-size: 0.9rem;
       border-top: 1px solid #e5e5e5;
     }
 
-    @media (max-width: 800px) {
+
+    /* ---------------- MOBILE ---------------- */
+
+    @media (max-width: 950px) {
+
       header {
         position: static;
       }
 
       nav {
-        align-items: flex-start;
         flex-direction: column;
+        align-items: flex-start;
         padding: 20px 0;
       }
 
@@ -224,8 +329,12 @@
 
       .hero {
         grid-template-columns: 1fr;
-        padding: 55px 0 75px;
+        padding: 55px 0 70px;
         gap: 45px;
+      }
+
+      .hero h1 {
+        white-space: normal;
       }
 
       .profile-photo {
@@ -238,276 +347,891 @@
         gap: 40px;
       }
 
+      .entry {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
       section {
         padding: 65px 0;
       }
     }
+
   </style>
+
 </head>
 
 
 <body>
 
+
+<!-- HEADER -->
+
 <header>
+
   <div class="container">
+
     <nav>
-      <a href="#home" class="name">Vukašin Gligorić</a>
+
+      <a href="#home" class="name">
+        Vukašin Gligorić, PhD
+      </a>
 
       <div class="nav-links">
+
         <a href="#research">Research</a>
+
         <a href="#publications">Publications</a>
+
+        <a href="#experience">Education</a>
+
         <a href="#teaching">Teaching</a>
-        <a href="cv.pdf" target="_blank">CV</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#thesis">PhD Thesis</a>
+
+        <a href="cv.pdf" target="_blank">
+          CV
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
       </div>
+
     </nav>
+
   </div>
+
 </header>
+
 
 
 <main>
 
-  <section id="home" style="border-top:none;">
-    <div class="container hero">
 
-      <div>
-        <h1>Vukašin<br>Gligorić</h1>
+<!-- HOME -->
 
-        <div class="subtitle">
-          Political and Social Psychologist
-        </div>
+<section id="home" style="border-top: none;">
 
-        <div class="intro">
-          <p>
-            I am a Postdoctoral Researcher at
-            <strong>New York University Abu Dhabi</strong> and a Visiting
-            Researcher at <strong>ICTA-UAB</strong> in Barcelona.
-          </p>
+  <div class="container hero">
 
-          <p>
-            My research examines political psychology and ideology,
-            social and economic systems, intergroup relations, and the
-            ways in which beliefs and social cognition interact with
-            broader societal structures.
-          </p>
-        </div>
+    <div>
 
-        <div class="hero-links">
-          <a class="button primary" href="#research">Research</a>
-          <a class="button" href="cv.pdf" target="_blank">Download CV</a>
-          <a class="button" href="mailto:v.gligoric@nyu.edu">Email me</a>
-        </div>
+      <h1>
+        Vukašin Gligorić, PhD
+      </h1>
+
+      <div class="subtitle">
+        Political and Social Psychologist
       </div>
 
-      <div>
-        <img
-          src="profile.jpg"
-          alt="Portrait of Vukašin Gligorić"
-          class="profile-photo"
-        >
+
+      <div class="intro">
+
+        <p>
+          I am a Postdoctoral Researcher in the Department of Psychology
+          at <strong>New York University Abu Dhabi</strong>.
+        </p>
+
+        <p>
+          My research examines political ideology and related belief systems,
+          such as religious and conspiracy worldviews and perceptions of
+          science and scientists, as well as intra- and intergroup relations,
+          including stereotypes and prejudice.
+        </p>
+
+        <p>
+          I am particularly interested in how overarching societal structures,
+          such as neocolonialism and neoliberalism, shape these psychological
+          and social processes. To address these questions, I draw on broader
+          frameworks including world-systems theory, decoloniality, and
+          neo-Marxist approaches, often through large-scale cross-country
+          studies.
+        </p>
+
+      </div>
+
+
+      <div class="hero-links">
+
+        <a
+          class="button primary"
+          href="#research">
+          Research
+        </a>
+
+        <a
+          class="button"
+          href="https://pure.uva.nl/ws/files/218491569/Thesis.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+          PhD Thesis
+        </a>
+
+        <a
+          class="button"
+          href="cv.pdf"
+          target="_blank">
+          CV
+        </a>
+
+        <a
+          class="button"
+          href="mailto:v.gligoric@nyu.edu">
+          Email
+        </a>
+
+      </div>
+
+
+
+      <!-- SOCIAL / ACADEMIC LINKS -->
+
+      <div class="social-links">
+
+
+        <!-- GOOGLE SCHOLAR -->
+
+        <a
+          class="social-link"
+          href="https://scholar.google.com/citations?user=Vl56w7EAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Google Scholar"
+          title="Google Scholar">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true">
+
+            <path
+              d="M12 3 1.5 9l10.5 6L20 10.43V17h2V9L12 3Zm-6 9.43V16c0 2.21 2.69 4 6 4s6-1.79 6-4v-3.57l-6 3.43-6-3.43Z">
+            </path>
+
+          </svg>
+
+        </a>
+
+
+
+        <!-- OPEN SCIENCE FRAMEWORK -->
+
+        <a
+          class="social-link"
+          href="https://osf.io/rc83w"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open Science Framework"
+          title="Open Science Framework">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            aria-hidden="true">
+
+            <circle
+              cx="12"
+              cy="12"
+              r="9">
+            </circle>
+
+            <circle
+              cx="12"
+              cy="12"
+              r="3">
+            </circle>
+
+            <path d="M12 3v6"></path>
+            <path d="M12 15v6"></path>
+            <path d="M3 12h6"></path>
+            <path d="M15 12h6"></path>
+
+          </svg>
+
+        </a>
+
+
+
+        <!-- PIPES LAB -->
+
+        <a
+          class="social-link"
+          href="https://www.jennifersheehyskeffington.com/about-pipes-lab"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="PIPES Lab"
+          title="PIPES Lab">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true">
+
+            <path d="M9 3h6"></path>
+
+            <path d="M10 3v5l-4.5 8a3 3 0 0 0 2.6 4.5h7.8a3 3 0 0 0 2.6-4.5L14 8V3"></path>
+
+            <path d="M8 15h8"></path>
+
+          </svg>
+
+        </a>
+
+
       </div>
 
     </div>
-  </section>
 
 
-  <section id="research">
-    <div class="container">
 
-      <h2>Research</h2>
+    <div>
 
-      <div class="two-column">
+      <img
+        src="profile.jpg"
+        alt="Portrait of Vukašin Gligorić"
+        class="profile-photo">
 
-        <div>
-          <p>
-            My work focuses on political and social psychology, with
-            particular interest in how ideological beliefs and social
-            perceptions are shaped by the broader political, economic,
-            and cultural systems in which people live.
-          </p>
-
-          <p>
-            I am especially interested in large-scale cross-national
-            research and in extending psychological research beyond
-            traditionally Western samples.
-          </p>
-        </div>
-
-        <div>
-          <ul class="research-list">
-            <li>Political Psychology and Ideology</li>
-            <li>Systemic Social Psychology</li>
-            <li>Large-scale Cross-country Research</li>
-            <li>Intra- and Intergroup Relations</li>
-            <li>Belief Systems and Social Cognition</li>
-          </ul>
-        </div>
-
-      </div>
     </div>
-  </section>
 
 
-  <section id="publications">
-    <div class="container">
+  </div>
 
-      <h2>Selected Publications</h2>
+</section>
 
-      <div class="publication">
-        <div class="publication-title">
-          Macro-Economic Inequality and National Stereotypes in 45
-          Non-Western Countries
-        </div>
 
-        <div class="publication-meta">
-          Gligorić, V., Jost, J. T., Mićanović, I., Tase, O.,
-          Araújo Do Bú, ... &amp; Schaaf, J. (2025)<br>
-          <em>Social Psychological and Personality Science</em>
-        </div>
 
-        <a href="https://doi.org/10.1177/19485506251370424"
-           target="_blank">
-          DOI
-        </a>
+<!-- RESEARCH -->
+
+<section id="research">
+
+  <div class="container">
+
+    <h2>
+      Research
+    </h2>
+
+
+    <div class="two-column">
+
+      <div>
+
+        <p>
+          My research focuses on the relationship between psychological
+          processes and the broader political, social, and economic systems
+          in which they occur.
+        </p>
+
+        <p>
+          I am particularly interested in political ideology, belief systems,
+          perceptions of social groups and scientists, and large-scale
+          cross-national research extending psychological science beyond
+          traditionally Western samples.
+        </p>
+
       </div>
 
 
-      <div class="publication">
-        <div class="publication-title">
-          Political Ideology and Trust in Scientists in the US
-        </div>
+      <div>
 
-        <div class="publication-meta">
-          Gligorić, V., Van Kleef, G. &amp; Rutjens, B. (2025)<br>
-          <em>Nature Human Behaviour, 9</em>, 1501–1512
-        </div>
+        <ul class="research-list">
 
-        <a href="https://doi.org/10.1038/s41562-025-02147-z"
-           target="_blank">
-          DOI
-        </a>
+          <li>
+            Political Psychology and Ideology
+          </li>
+
+          <li>
+            Systemic Social Psychology
+          </li>
+
+          <li>
+            Large-scale Cross-country Research
+          </li>
+
+          <li>
+            Intra- and Intergroup Relations
+          </li>
+
+          <li>
+            Belief Systems and Social Cognition
+          </li>
+
+        </ul>
+
       </div>
 
+    </div>
 
-      <div class="publication">
-        <div class="publication-title">
-          The Role of Worldviews, Radicalization Risk Factors, and
-          Personality in Harassment of Scientists
-        </div>
+  </div>
 
-        <div class="publication-meta">
-          Gligorić, V., Reinhardt, C., Nieuwenhuijzen, E., Castro, J. O.,
-          Feddes, A., Van Kleef, G. &amp; Rutjens, B. (2025)<br>
-          <em>Scientific Reports, 15</em>, 1261
-        </div>
+</section>
 
-        <a href="https://doi.org/10.1038/s41598-025-85208-7"
-           target="_blank">
-          DOI
-        </a>
+
+
+<!-- PUBLICATIONS -->
+
+<section id="publications">
+
+  <div class="container">
+
+
+    <h2>
+      Selected Publications
+    </h2>
+
+
+
+    <div class="publication">
+
+      <div class="publication-title">
+        Macro-Economic Inequality and National Stereotypes in 45 Non-Western Countries
       </div>
 
+      <div class="publication-meta">
 
-      <div class="publication">
-        <div class="publication-title">
-          How Social Evaluations Shape Trust in 45 Types of Scientists
-        </div>
+        Gligorić, V., Jost, J. T., Mićanović, I., Tase, O.,
+        Araújo Do Bú, ... &amp; Schaaf, J. (2025).
 
-        <div class="publication-meta">
-          Gligorić, V., Van Kleef, G. &amp; Rutjens, B. (2024)<br>
-          <em>PLOS ONE, 19</em>(4), e0299621
-        </div>
-
-        <a href="https://doi.org/10.1371/journal.pone.0299621"
-           target="_blank">
-          DOI
-        </a>
-      </div>
-
-
-      <p>
         <em>
-          A complete publication list will be added in the next version
-          of the website.
+          Social Psychological and Personality Science.
         </em>
-      </p>
+
+      </div>
+
+      <a
+        href="https://doi.org/10.1177/19485506251370424"
+        target="_blank"
+        rel="noopener noreferrer">
+        DOI
+      </a>
 
     </div>
-  </section>
 
 
-  <section id="teaching">
-    <div class="container">
 
-      <h2>Teaching</h2>
+    <div class="publication">
 
-      <div class="role">
-        <div class="role-year">2025–2026</div>
-        <div class="role-title">
+      <div class="publication-title">
+        Political Ideology and Trust in Scientists in the US
+      </div>
+
+      <div class="publication-meta">
+
+        Gligorić, V., Van Kleef, G. &amp; Rutjens, B. (2025).
+
+        <em>
+          Nature Human Behaviour, 9
+        </em>,
+
+        1501–1512.
+
+      </div>
+
+      <a
+        href="https://doi.org/10.1038/s41562-025-02147-z"
+        target="_blank"
+        rel="noopener noreferrer">
+        DOI
+      </a>
+
+    </div>
+
+
+
+    <div class="publication">
+
+      <div class="publication-title">
+        Active Rejection or Passive Indifference? Mixed-methods Evidence on National (Dis)identification
+      </div>
+
+      <div class="publication-meta">
+
+        Gligorić, V. &amp; Obradović, S. (2024).
+
+        <em>
+          Group Processes &amp; Intergroup Relations, 27
+        </em>(7).
+
+      </div>
+
+      <a
+        href="https://doi.org/10.1177/13684302241229981"
+        target="_blank"
+        rel="noopener noreferrer">
+        DOI
+      </a>
+
+    </div>
+
+
+
+    <div class="publication">
+
+      <div class="publication-title">
+        Political Bullshit Receptivity and Its Correlates:
+        A Cross-country Validation of the Concept
+      </div>
+
+      <div class="publication-meta">
+
+        Gligorić, V., Feddes, A. R., &amp; Doosje, B. (2022).
+
+        <em>
+          Journal of Social and Political Psychology, 10
+        </em>(2),
+
+        411–429.
+
+      </div>
+
+      <a
+        href="https://doi.org/10.5964/jspp.6565"
+        target="_blank"
+        rel="noopener noreferrer">
+        DOI
+      </a>
+
+    </div>
+
+
+
+    <p style="margin-top: 45px;">
+
+      <a
+        class="button"
+        href="https://scholar.google.com/citations?user=Vl56w7EAAAAJ&hl=en"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        All publications on Google Scholar
+
+      </a>
+
+    </p>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- EDUCATION & ACADEMIC EXPERIENCE -->
+
+<section id="experience">
+
+  <div class="container">
+
+
+    <h2>
+      Education &amp; Academic Experience
+    </h2>
+
+
+
+    <div class="entry">
+
+      <div class="entry-date">
+        2025–present
+      </div>
+
+      <div>
+
+        <div class="entry-title">
+          Postdoctoral Researcher
+        </div>
+
+        New York University Abu Dhabi, UAE
+
+        <div class="entry-note">
+          PIPES Lab · PI: Dr. Jennifer Sheehy-Skeffington
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="entry">
+
+      <div class="entry-date">
+        2026
+      </div>
+
+      <div>
+
+        <div class="entry-title">
+          Visiting Researcher
+        </div>
+
+        ICTA-UAB, Barcelona, Spain
+
+        <div class="entry-note">
+          PIs: Prof. Giorgos Kallis &amp; Dr. Jason Hickel
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="entry">
+
+      <div class="entry-date">
+        2023
+      </div>
+
+      <div>
+
+        <div class="entry-title">
+          Visiting PhD Researcher
+        </div>
+
+        Social Justice Lab,
+        New York University,
+        New York, USA
+
+        <div class="entry-note">
+          PI: Prof. John T. Jost
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="entry">
+
+      <div class="entry-date">
+        2021–2025
+      </div>
+
+      <div>
+
+        <div class="entry-title">
+          PhD in Social Psychology
+        </div>
+
+        University of Amsterdam,
+        Netherlands
+
+        <div class="entry-note">
+          Supervisors:
+          Dr. Bastiaan Rutjens &amp;
+          Prof. Gerben van Kleef
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="entry">
+
+      <div class="entry-date">
+        2018–2020
+      </div>
+
+      <div>
+
+        <div class="entry-title">
+          MSc in Research Psychology
+        </div>
+
+        University of Amsterdam,
+        Netherlands
+
+        <div class="entry-note">
+          Summa Cum Laude · Best Master's Thesis Award
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="entry">
+
+      <div class="entry-date">
+        2014–2018
+      </div>
+
+      <div>
+
+        <div class="entry-title">
+          BSc in Research Psychology
+        </div>
+
+        University of Belgrade,
+        Serbia
+
+        <div class="entry-note">
+          Class Valedictorian
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- TEACHING -->
+
+<section id="teaching">
+
+  <div class="container">
+
+
+    <h2>
+      Teaching &amp; Supervision
+    </h2>
+
+
+
+    <div class="entry">
+
+      <div class="entry-date">
+        2025–2026
+      </div>
+
+      <div>
+
+        <div class="entry-title">
           Instructor — New York University Abu Dhabi
         </div>
-        <p>
-          Research Methods in Psychology. Supporting and supervising
-          undergraduate research projects and preparing and grading
-          assessments and examinations.
-        </p>
-      </div>
 
+        Research Methods in Psychology.
 
-      <div class="role">
-        <div class="role-year">2021–2024</div>
-        <div class="role-title">
-          Master's Thesis Supervisor — University of Amsterdam
-        </div>
-        <p>
-          Led research projects and supervised six Master's students
-          completing theses in Social Psychology.
-        </p>
-      </div>
-
-
-      <div class="role">
-        <div class="role-year">2019–2021</div>
-        <div class="role-title">
-          Tutor — PPLE College, University of Amsterdam
-        </div>
-        <p>
-          Teaching and supervision in Doing Research, Political
-          Psychology, and Decision Making.
-        </p>
       </div>
 
     </div>
-  </section>
 
 
-  <section id="contact">
-    <div class="container">
 
-      <h2>Contact</h2>
+    <div class="entry">
+
+      <div class="entry-date">
+        2020–2024
+      </div>
+
+      <div>
+
+        <div class="entry-title">
+          Bachelor's and Master's Thesis Supervisor — University of Amsterdam
+        </div>
+
+        Supervision of undergraduate and Master's research projects
+        and theses in psychology.
+
+      </div>
+
+    </div>
+
+
+
+    <div class="entry">
+
+      <div class="entry-date">
+        2019–2021
+      </div>
+
+      <div>
+
+        <div class="entry-title">
+          Tutor — PPLE College, University of Amsterdam
+        </div>
+
+        Teaching and supervision in
+        Doing Research,
+        Political Psychology,
+        Decision Making I,
+        and Decision Making II.
+
+      </div>
+
+    </div>
+
+
+
+    <div class="entry">
+
+      <div class="entry-date">
+        2017–2018
+      </div>
+
+      <div>
+
+        <div class="entry-title">
+          Tutor — Faculty of Security Studies, University of Belgrade
+        </div>
+
+        General Psychology and Social Psychology.
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- PHD THESIS -->
+
+<section id="thesis">
+
+  <div class="container">
+
+
+    <h2>
+      PhD Thesis
+    </h2>
+
+
+    <div class="thesis-box">
+
+
+      <div class="thesis-title">
+
+        “Remember Hiroshima?” Exploring the Structure,
+        Antecedents, and Outcomes of Public Perceptions of Scientists
+
+      </div>
+
 
       <p>
-        New York University Abu Dhabi<br>
-        Abu Dhabi, United Arab Emirates
+        PhD dissertation,
+        University of Amsterdam,
+        2025.
       </p>
 
+
+      <a
+        class="button primary"
+        href="https://pure.uva.nl/ws/files/218491569/Thesis.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        View / Download Thesis
+
+      </a>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+  <div class="container">
+
+
+    <h2>
+      Contact
+    </h2>
+
+
+    <p>
+
+      New York University Abu Dhabi
+
+      <br>
+
+      Abu Dhabi,
+      United Arab Emirates
+
+    </p>
+
+
+    <div class="contact-links">
+
       <p>
+
         <a href="mailto:v.gligoric@nyu.edu">
           v.gligoric@nyu.edu
         </a>
+
+      </p>
+
+
+      <p>
+
+        <a
+          href="https://scholar.google.com/citations?user=Vl56w7EAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer">
+          Google Scholar
+        </a>
+
+        &nbsp; · &nbsp;
+
+        <a
+          href="https://osf.io/rc83w"
+          target="_blank"
+          rel="noopener noreferrer">
+          Open Science Framework
+        </a>
+
+        &nbsp; · &nbsp;
+
+        <a
+          href="https://www.jennifersheehyskeffington.com/about-pipes-lab"
+          target="_blank"
+          rel="noopener noreferrer">
+          PIPES Lab
+        </a>
+
       </p>
 
     </div>
-  </section>
+
+
+  </div>
+
+</section>
+
 
 </main>
 
 
+
 <footer>
+
   <div class="container">
+
     © 2026 Vukašin Gligorić
+
   </div>
+
 </footer>
 
+
 </body>
+
 </html>
