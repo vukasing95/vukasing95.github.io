@@ -107,20 +107,25 @@
       padding: 90px 0;
     }
 
+    .hero-heading {
+      display: inline-block;
+    }
+
     .hero h1 {
       font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(2.8rem, 4.8vw, 4.7rem);
       font-weight: 500;
       line-height: 1.03;
       letter-spacing: -0.04em;
-      margin: 0 0 17px;
+      margin: 0;
       white-space: nowrap;
     }
 
     .subtitle {
       font-size: 1.35rem;
       color: var(--muted);
-      margin-bottom: 27px;
+      margin: 13px 0 27px;
+      text-align: center;
     }
 
     .intro {
@@ -521,8 +526,16 @@
         padding: 55px 0 70px;
       }
 
+      .hero-heading {
+        display: block;
+      }
+
       .hero h1 {
         white-space: normal;
+      }
+
+      .subtitle {
+        text-align: left;
       }
 
       .profile-photo {
@@ -579,8 +592,6 @@
 <body>
 
 
-<!-- HEADER -->
-
 <header>
 
   <div class="container">
@@ -614,21 +625,24 @@
 <main>
 
 
-<!-- HOME -->
-
 <section id="home" style="border-top: none;">
 
   <div class="container hero">
 
     <div>
 
-      <h1>
-        Vukašin Gligorić, PhD
-      </h1>
+      <div class="hero-heading">
 
-      <div class="subtitle">
-        Political and Social Psychologist
+        <h1>
+          Vukašin Gligorić, PhD
+        </h1>
+
+        <div class="subtitle">
+          Political and Social Psychologist
+        </div>
+
       </div>
+
 
       <div class="intro">
 
@@ -677,8 +691,6 @@
 
       </div>
 
-
-      <!-- LINKS -->
 
       <div class="links-block">
 
@@ -805,18 +817,12 @@
 
 
 
-<!-- RESEARCH -->
-
 <section id="research">
 
   <div class="container">
 
     <div class="section-heading">
-
-      <h2>
-        Research
-      </h2>
-
+      <h2>Research</h2>
     </div>
 
 
@@ -853,25 +859,11 @@
           Research Interests
         </h3>
 
-        <div class="research-interest">
-          Political Psychology and Ideology
-        </div>
-
-        <div class="research-interest">
-          Systemic Social Psychology
-        </div>
-
-        <div class="research-interest">
-          Large-scale Cross-country Research
-        </div>
-
-        <div class="research-interest">
-          Intra- and Intergroup Relations
-        </div>
-
-        <div class="research-interest">
-          Belief Systems and Social Cognition
-        </div>
+        <div class="research-interest">Political Psychology and Ideology</div>
+        <div class="research-interest">Systemic Social Psychology</div>
+        <div class="research-interest">Large-scale Cross-country Research</div>
+        <div class="research-interest">Intra- and Intergroup Relations</div>
+        <div class="research-interest">Belief Systems and Social Cognition</div>
 
       </div>
 
@@ -883,8 +875,6 @@
 </section>
 
 
-
-<!-- PUBLICATIONS -->
 
 <section id="publications">
 
@@ -914,7 +904,7 @@
         </div>
 
         <div class="publication-authors">
-          Gligorić, V., Jost, J. T., Mićanović, I., Tase, O.,
+          <strong>Gligorić, V.</strong>, Jost, J. T., Mićanović, I., Tase, O.,
           Araújo Do Bú, E., Arévalo-Romero, C., Balabanova, A.,
           Baracaldo, P., Basáñez, T., Çakmak, H., Capella, M.,
           Chen, T. Y., Eldesouky, L., Erhan, E., Fadhlia, T. N.,
@@ -965,7 +955,7 @@
         </div>
 
         <div class="publication-authors">
-          Gligorić, V., Van Kleef, G. A., &amp; Rutjens, B. T. (2025).
+          <strong>Gligorić, V.</strong>, Van Kleef, G. A., &amp; Rutjens, B. T. (2025).
         </div>
 
         <div class="publication-journal">
@@ -995,7 +985,7 @@
         </div>
 
         <div class="publication-authors">
-          Gligorić, V. &amp; Obradović, S. (2024).
+          <strong>Gligorić, V.</strong> &amp; Obradović, S. (2024).
         </div>
 
         <div class="publication-journal">
@@ -1026,7 +1016,7 @@
         </div>
 
         <div class="publication-authors">
-          Gligorić, V., Feddes, A. R., &amp; Doosje, B. (2022).
+          <strong>Gligorić, V.</strong>, Feddes, A. R., &amp; Doosje, B. (2022).
         </div>
 
         <div class="publication-journal">
@@ -1038,6 +1028,37 @@
           <a
             class="paper-link"
             href="https://doi.org/10.5964/jspp.6565"
+            target="_blank"
+            rel="noopener noreferrer">
+            DOI ↗
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="publication">
+
+        <div class="publication-title">
+          The Usual Suspects: How Psychological Motives and Thinking Styles Predict the Endorsement of Well-Known and COVID-19 Conspiracy Beliefs
+        </div>
+
+        <div class="publication-authors">
+          <strong>Gligorić, V.</strong>, da Silva, M. M., Eker, S.,
+          van Hoek, N., Nieuwenhuijzen, E., Popova, U., &amp; Zeighami, G. (2021).
+        </div>
+
+        <div class="publication-journal">
+          <em>Applied Cognitive Psychology, 35</em>(5), 1171–1181.
+        </div>
+
+        <div class="publication-links">
+
+          <a
+            class="paper-link"
+            href="https://doi.org/10.1002/acp.3844"
             target="_blank"
             rel="noopener noreferrer">
             DOI ↗
@@ -1072,18 +1093,12 @@
 
 
 
-<!-- EDUCATION -->
-
 <section id="experience">
 
   <div class="container">
 
     <div class="section-heading">
-
-      <h2>
-        Education &amp; Academic Experience
-      </h2>
-
+      <h2>Education &amp; Academic Experience</h2>
     </div>
 
 
@@ -1092,9 +1107,7 @@
 
       <div class="entry">
 
-        <div class="entry-date">
-          2025–present
-        </div>
+        <div class="entry-date">2025–present</div>
 
         <div>
 
@@ -1115,9 +1128,7 @@
 
       <div class="entry">
 
-        <div class="entry-date">
-          2026
-        </div>
+        <div class="entry-date">2026</div>
 
         <div>
 
@@ -1138,9 +1149,7 @@
 
       <div class="entry">
 
-        <div class="entry-date">
-          2023
-        </div>
+        <div class="entry-date">2023</div>
 
         <div>
 
@@ -1161,9 +1170,7 @@
 
       <div class="entry">
 
-        <div class="entry-date">
-          2021–2025
-        </div>
+        <div class="entry-date">2021–2025</div>
 
         <div>
 
@@ -1184,9 +1191,7 @@
 
       <div class="entry">
 
-        <div class="entry-date">
-          2018–2020
-        </div>
+        <div class="entry-date">2018–2020</div>
 
         <div>
 
@@ -1207,9 +1212,7 @@
 
       <div class="entry">
 
-        <div class="entry-date">
-          2014–2018
-        </div>
+        <div class="entry-date">2014–2018</div>
 
         <div>
 
@@ -1236,18 +1239,12 @@
 
 
 
-<!-- TEACHING -->
-
 <section id="teaching">
 
   <div class="container">
 
     <div class="section-heading">
-
-      <h2>
-        Teaching &amp; Supervision
-      </h2>
-
+      <h2>Teaching &amp; Supervision</h2>
     </div>
 
 
@@ -1256,9 +1253,7 @@
 
       <div class="entry">
 
-        <div class="entry-date">
-          2025–2026
-        </div>
+        <div class="entry-date">2025–2026</div>
 
         <div>
 
@@ -1275,9 +1270,7 @@
 
       <div class="entry">
 
-        <div class="entry-date">
-          2020–2024
-        </div>
+        <div class="entry-date">2020–2024</div>
 
         <div>
 
@@ -1295,9 +1288,7 @@
 
       <div class="entry">
 
-        <div class="entry-date">
-          2019–2021
-        </div>
+        <div class="entry-date">2019–2021</div>
 
         <div>
 
@@ -1315,9 +1306,7 @@
 
       <div class="entry">
 
-        <div class="entry-date">
-          2017–2018
-        </div>
+        <div class="entry-date">2017–2018</div>
 
         <div>
 
@@ -1339,8 +1328,6 @@
 </section>
 
 
-
-<!-- MEDIA -->
 
 <section id="media">
 
@@ -1381,7 +1368,7 @@
         </div>
 
         <div class="media-type">
-          Research coverage ↗
+          Interview ↗
         </div>
 
       </a>
@@ -1494,7 +1481,7 @@
 
       <a
         class="media-card"
-        href="https://www.folia.nl/nl/wetenschap/161693/vertrouwen-in-wetenschap-wel-in-neurowetenschappers-minder-in-politicologen"
+        href="https://www.folia.nl/en/wetenschap/161693/trust-in-science-varies-by-scientist"
         target="_blank"
         rel="noopener noreferrer">
 
@@ -1505,7 +1492,7 @@
           </div>
 
           <div class="media-title">
-            Vertrouwen in wetenschap: wel in neurowetenschappers, minder in politicologen
+            Trust in science varies by scientist
           </div>
 
         </div>
@@ -1525,18 +1512,12 @@
 
 
 
-<!-- THESIS -->
-
 <section id="thesis">
 
   <div class="container">
 
     <div class="section-heading">
-
-      <h2>
-        PhD Thesis
-      </h2>
-
+      <h2>PhD Thesis</h2>
     </div>
 
 
@@ -1581,18 +1562,12 @@
 
 
 
-<!-- CONTACT -->
-
 <section id="contact">
 
   <div class="container">
 
     <div class="section-heading">
-
-      <h2>
-        Contact
-      </h2>
-
+      <h2>Contact</h2>
     </div>
 
 
