@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vukašin Gligorić | Political and Social Psychologist</title>
+
+  <meta name="description"
+        content="Vukašin Gligorić is a political and social psychologist and Postdoctoral Researcher at NYU Abu Dhabi.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fafafa;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #7a3d2b;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(1080px, 88%);
+      margin: auto;
+    }
+
+    header {
+      background: #fafafa;
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #222;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      min-height: 620px;
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 70px;
+      align-items: center;
+      padding: 90px 0;
+    }
+
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 6vw, 5.3rem);
+      line-height: 1.02;
+      font-weight: 500;
+      margin: 0 0 20px;
+      letter-spacing: -0.035em;
+    }
+
+    .subtitle {
+      font-size: 1.35rem;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .intro {
+      max-width: 660px;
+      font-size: 1.08rem;
+      color: #444;
+    }
+
+    .hero-links {
+      margin-top: 32px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 18px;
+      border: 1px solid #7a3d2b;
+      border-radius: 4px;
+    }
+
+    .button.primary {
+      background: #7a3d2b;
+      color: white;
+    }
+
+    .profile-photo {
+      width: 100%;
+      max-width: 390px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 3px;
+      display: block;
+      margin-left: auto;
+    }
+
+    section {
+      padding: 95px 0;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      font-size: 2.5rem;
+      margin: 0 0 40px;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+    }
+
+    .research-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .research-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid #ddd;
+      font-size: 1.05rem;
+    }
+
+    .publication {
+      margin-bottom: 34px;
+      max-width: 850px;
+    }
+
+    .publication-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .publication-meta {
+      color: #666;
+    }
+
+    .role {
+      margin-bottom: 34px;
+    }
+
+    .role-year {
+      color: #888;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    .role-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 55px 0;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        position: static;
+      }
+
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px 0;
+      }
+
+      .nav-links {
+        gap: 15px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 55px 0 75px;
+        gap: 45px;
+      }
+
+      .profile-photo {
+        margin: 0;
+        max-width: 430px;
+      }
+
+      .two-column {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="#home" class="name">Vukašin Gligorić</a>
+
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="cv.pdf" target="_blank">CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <section id="home" style="border-top:none;">
+    <div class="container hero">
+
+      <div>
+        <h1>Vukašin<br>Gligorić</h1>
+
+        <div class="subtitle">
+          Political and Social Psychologist
+        </div>
+
+        <div class="intro">
+          <p>
+            I am a Postdoctoral Researcher at
+            <strong>New York University Abu Dhabi</strong> and a Visiting
+            Researcher at <strong>ICTA-UAB</strong> in Barcelona.
+          </p>
+
+          <p>
+            My research examines political psychology and ideology,
+            social and economic systems, intergroup relations, and the
+            ways in which beliefs and social cognition interact with
+            broader societal structures.
+          </p>
+        </div>
+
+        <div class="hero-links">
+          <a class="button primary" href="#research">Research</a>
+          <a class="button" href="cv.pdf" target="_blank">Download CV</a>
+          <a class="button" href="mailto:v.gligoric@nyu.edu">Email me</a>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="profile.jpg"
+          alt="Portrait of Vukašin Gligorić"
+          class="profile-photo"
+        >
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="research">
+    <div class="container">
+
+      <h2>Research</h2>
+
+      <div class="two-column">
+
+        <div>
+          <p>
+            My work focuses on political and social psychology, with
+            particular interest in how ideological beliefs and social
+            perceptions are shaped by the broader political, economic,
+            and cultural systems in which people live.
+          </p>
+
+          <p>
+            I am especially interested in large-scale cross-national
+            research and in extending psychological research beyond
+            traditionally Western samples.
+          </p>
+        </div>
+
+        <div>
+          <ul class="research-list">
+            <li>Political Psychology and Ideology</li>
+            <li>Systemic Social Psychology</li>
+            <li>Large-scale Cross-country Research</li>
+            <li>Intra- and Intergroup Relations</li>
+            <li>Belief Systems and Social Cognition</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="publications">
+    <div class="container">
+
+      <h2>Selected Publications</h2>
+
+      <div class="publication">
+        <div class="publication-title">
+          Macro-Economic Inequality and National Stereotypes in 45
+          Non-Western Countries
+        </div>
+
+        <div class="publication-meta">
+          Gligorić, V., Jost, J. T., Mićanović, I., Tase, O.,
+          Araújo Do Bú, ... &amp; Schaaf, J. (2025)<br>
+          <em>Social Psychological and Personality Science</em>
+        </div>
+
+        <a href="https://doi.org/10.1177/19485506251370424"
+           target="_blank">
+          DOI
+        </a>
+      </div>
+
+
+      <div class="publication">
+        <div class="publication-title">
+          Political Ideology and Trust in Scientists in the US
+        </div>
+
+        <div class="publication-meta">
+          Gligorić, V., Van Kleef, G. &amp; Rutjens, B. (2025)<br>
+          <em>Nature Human Behaviour, 9</em>, 1501–1512
+        </div>
+
+        <a href="https://doi.org/10.1038/s41562-025-02147-z"
+           target="_blank">
+          DOI
+        </a>
+      </div>
+
+
+      <div class="publication">
+        <div class="publication-title">
+          The Role of Worldviews, Radicalization Risk Factors, and
+          Personality in Harassment of Scientists
+        </div>
+
+        <div class="publication-meta">
+          Gligorić, V., Reinhardt, C., Nieuwenhuijzen, E., Castro, J. O.,
+          Feddes, A., Van Kleef, G. &amp; Rutjens, B. (2025)<br>
+          <em>Scientific Reports, 15</em>, 1261
+        </div>
+
+        <a href="https://doi.org/10.1038/s41598-025-85208-7"
+           target="_blank">
+          DOI
+        </a>
+      </div>
+
+
+      <div class="publication">
+        <div class="publication-title">
+          How Social Evaluations Shape Trust in 45 Types of Scientists
+        </div>
+
+        <div class="publication-meta">
+          Gligorić, V., Van Kleef, G. &amp; Rutjens, B. (2024)<br>
+          <em>PLOS ONE, 19</em>(4), e0299621
+        </div>
+
+        <a href="https://doi.org/10.1371/journal.pone.0299621"
+           target="_blank">
+          DOI
+        </a>
+      </div>
+
+
+      <p>
+        <em>
+          A complete publication list will be added in the next version
+          of the website.
+        </em>
+      </p>
+
+    </div>
+  </section>
+
+
+  <section id="teaching">
+    <div class="container">
+
+      <h2>Teaching</h2>
+
+      <div class="role">
+        <div class="role-year">2025–2026</div>
+        <div class="role-title">
+          Instructor — New York University Abu Dhabi
+        </div>
+        <p>
+          Research Methods in Psychology. Supporting and supervising
+          undergraduate research projects and preparing and grading
+          assessments and examinations.
+        </p>
+      </div>
+
+
+      <div class="role">
+        <div class="role-year">2021–2024</div>
+        <div class="role-title">
+          Master's Thesis Supervisor — University of Amsterdam
+        </div>
+        <p>
+          Led research projects and supervised six Master's students
+          completing theses in Social Psychology.
+        </p>
+      </div>
+
+
+      <div class="role">
+        <div class="role-year">2019–2021</div>
+        <div class="role-title">
+          Tutor — PPLE College, University of Amsterdam
+        </div>
+        <p>
+          Teaching and supervision in Doing Research, Political
+          Psychology, and Decision Making.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="container">
+
+      <h2>Contact</h2>
+
+      <p>
+        New York University Abu Dhabi<br>
+        Abu Dhabi, United Arab Emirates
+      </p>
+
+      <p>
+        <a href="mailto:v.gligoric@nyu.edu">
+          v.gligoric@nyu.edu
+        </a>
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="container">
+    © 2026 Vukašin Gligorić
+  </div>
+</footer>
+
+</body>
+</html>
